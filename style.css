@@ -1,6 +1,24 @@
+html{
+    height: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+}
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(Pics/Good-Log.jpg);
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .5)), url(Pics/Good-Log.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+.scroll{
+    overflow: visible;
 }
 ul{
     display: flex;
@@ -27,7 +45,7 @@ a{
 }
 .header{
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 30%;
+    margin-top: 32.5vh;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -43,12 +61,16 @@ a{
 }
 li:hover{
     background-color: rgba(25, 25, 25, 0.9);
+    -moz-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    -webkit-transition: all .15s ease-in;
+    transition: all .15s ease-in;
 }
 li:active{
     background-color: rgb(50, 50, 50, 0.9);
 }
 #contactbody{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 50%;
     margin: auto;
 }
